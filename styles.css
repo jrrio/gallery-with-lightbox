@@ -228,6 +228,8 @@ img {
   fill: snow;
 }
 .footer a {
-  margin-left: 10px;
   color: inherit;
+  margin-left: 10px;
+  text-decoration: underline;
+  text-underline-position: under;
 }
