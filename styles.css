@@ -4,7 +4,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #333;
+  background-color: #0a1124;
   color: snow;
   font: 300 1.1rem/1.65 "Poppins", sans-serif;
   margin: 0;
@@ -32,8 +32,7 @@ img {
   max-width: 560px;
 }
 .gallery {
-  background-color: #0a1124;
-  padding-bottom: 60px;
+  padding-bottom: 10px;
   text-align: center;
 }
 .gallery-heading {
@@ -216,4 +215,19 @@ img {
   .lightbox .lb-url {
     padding-top: 0;
   }
+}
+
+.footer {
+  color: snow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+.footer svg {
+  fill: snow;
+}
+.footer a {
+  margin-left: 10px;
+  color: inherit;
 }
