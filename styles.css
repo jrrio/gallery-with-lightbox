@@ -21,6 +21,11 @@ body *:before,
 body *:after {
   box-sizing: inherit;
 }
+img {
+  border: 0;
+  display: block; /* collapse top and bottom margins */
+  max-width: 100%;
+}
 .section {
   padding: 16px 20px;
 }
@@ -67,9 +72,7 @@ body *:after {
 }
 
 .gallery-item img {
-  border: 0;
   cursor: pointer;
-  display: block;
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
