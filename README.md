@@ -4,4 +4,4 @@ The goal here is to present a responsive Lightbox consisting of an image, a URL 
 
 I've used vanilla JavaScript and CSS Grid which will run in major browsers. An example was published at Codepen:
 
-https://codepen.io/jrio/pen/bGpdYzR
+https://codepen.io/jrio/full/bGpdYzR
