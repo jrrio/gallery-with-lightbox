@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const gitems = qsa(".gallery-item");
   gitems.forEach((el, i) => {
     el.addEventListener("click", openLightbox);
-    el.style.setProperty('--staggered-delay', (i + 3) * 100 + 'ms'); // 2020-09-20
+    el.style.setProperty('--staggered-delay', (i + 3) * 150 + 'ms'); // 2020-09-21
   });
 
   const lbclose = qs(".lightbox .close");
