@@ -71,7 +71,51 @@ img {
   padding: 10px;
 }
 
+/* 2020-09-20 - Idea from https://www.youtube.com/watch?v=705XCEruZFs */
+@-webkit-keyframes gallery-items-animation {
+  from {
+    opacity: 0;
+    transform: scale(0.3);
+    -webkit-filter: hue-rotate(180deg);
+            filter: hue-rotate(180deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+}
+@keyframes gallery-items-animation {
+  from {
+    opacity: 0;
+    transform: scale(0.3);
+    -webkit-filter: hue-rotate(180deg);
+            filter: hue-rotate(180deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+}
+
+/* 2020-09-20 */
+.gallery-item {
+  -webkit-animation: gallery-items-animation 700ms ease-out;
+          animation: gallery-items-animation 700ms ease-out;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  /* --staggered-delay will be incremented for each item by JS on DOMContentLoaded */
+  --staggered-delay: 100ms;
+  -webkit-animation-delay: var(--staggered-delay);
+          animation-delay: var(--staggered-delay);
+}
+
 .gallery-item img {
+  border: 0;
+  display: block; /* collapse top and bottom margins */
   cursor: pointer;
   -o-object-fit: cover;
   object-fit: cover;
