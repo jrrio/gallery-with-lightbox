@@ -35,7 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (lightbox) lightbox.classList.remove("preload");
 
   const gitems = qsa(".gallery-item");
-  gitems.forEach((el) => el.addEventListener("click", openLightbox));
+  gitems.forEach((el, i) => {
+    el.addEventListener("click", openLightbox);
+    el.style.setProperty('--staggered-delay', (i + 3) * 100 + 'ms'); // 2020-09-20
+  });
 
   const lbclose = qs(".lightbox .close");
   if (lbclose) lbclose.addEventListener("click", closeLightbox);
