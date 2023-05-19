@@ -131,6 +131,18 @@ img {
   display: none;
 }
 
+/* The pointer CSS media feature tests whether the user has an accurate pointing device (such as a mouse, a stylus pen on touch screen, etc.). It's also possible to use "any-pointer: fine" for touch devices having a mouse connected. */
+@media screen and (pointer: fine) {
+  .gallery-item img {
+    transition: all 0.3s linear;
+  }
+  .gallery-item img:focus,
+  .gallery-item img:hover {
+    filter: brightness(0.75);
+    transform: scale(0.98);
+  }
+}
+
 /*******************************
        .lightbox styles
 *******************************/
